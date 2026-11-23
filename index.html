@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Портфолио веб-разработчика — проекты, навыки, контакты" />
+  <title>Портфолио | Веб-разработчик</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">Моё<span>Портфолио</span></a>
+
+      <div class="header__controls">
+        <!-- Переключатель языка -->
+        <div class="lang-switch" role="group" aria-label="Language / Язык">
+          <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <!-- Бургер для мобильных -->
+        <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link" data-ru="Обо мне" data-en="About">Обо мне</a></li>
+          <li><a href="#skills" class="nav__link" data-ru="Навыки" data-en="Skills">Навыки</a></li>
+          <li><a href="#projects" class="nav__link" data-ru="Проекты" data-en="Projects">Проекты</a></li>
+          <li><a href="#contact" class="nav__link" data-ru="Контакты" data-en="Contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Главный экран -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            <span data-ru="Привет, я" data-en="Hi, I'm">Привет, я</span>
+            <span class="accent" data-ru="Андрей" data-en="Andrey">Андрей</span>
+          </h1>
+          <p class="hero__subtitle"
+             data-ru="Начинающий веб-разработчик. Создаю адаптивные и интерактивные сайты на HTML, CSS и JavaScript."
+             data-en="Junior web developer. I build responsive and interactive websites with HTML, CSS and JavaScript.">
+            Начинающий веб-разработчик. Создаю адаптивные и интерактивные сайты на HTML, CSS и JavaScript.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary" data-ru="Смотреть проекты" data-en="View projects">Смотреть проекты</a>
+            <a href="#contact" class="btn btn--outline" data-ru="Связаться" data-en="Get in touch">Связаться</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="images/avatar.jpg" alt="Фотография Андрея, веб-разработчика" width="320" height="320" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title" data-ru="Обо мне" data-en="About me">Обо мне</h2>
+        <p class="section__lead"
+           data-ru="Я учусь веб-разработке и создаю проекты с использованием современных технологий. Мне нравится превращать идеи в работающие интерфейсы, заботиться о доступности и адаптивности."
+           data-en="I'm learning web development and building projects with modern technologies. I enjoy turning ideas into working interfaces and care about accessibility and responsiveness.">
+          Я учусь веб-разработке и создаю проекты с использованием современных технологий. Мне нравится превращать идеи в работающие интерфейсы, заботиться о доступности и адаптивности.
+        </p>
+        <ul class="about__list">
+          <li data-ru="✅ Опыт создания адаптивных лендингов" data-en="✅ Experience building responsive landing pages">✅ Опыт создания адаптивных лендингов</li>
+          <li data-ru="✅ Работа с Flexbox и CSS Grid" data-en="✅ Working with Flexbox and CSS Grid">✅ Работа с Flexbox и CSS Grid</li>
+          <li data-ru="✅ Интерактивность на чистом JavaScript" data-en="✅ Interactivity with vanilla JavaScript">✅ Интерактивность на чистом JavaScript</li>
+          <li data-ru="✅ Использование Git и GitHub" data-en="✅ Using Git and GitHub">✅ Использование Git и GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title" data-ru="Навыки" data-en="Skills">Навыки</h2>
+        <div class="skills">
+          <article class="skill-card">
+            <h3>HTML5</h3>
+            <p data-ru="Семантическая верстка, доступность, формы." data-en="Semantic markup, accessibility, forms.">Семантическая верстка, доступность, формы.</p>
+          </article>
+          <article class="skill-card">
+            <h3>CSS3</h3>
+            <p data-ru="Flexbox, Grid, адаптивность, анимации." data-en="Flexbox, Grid, responsiveness, animations.">Flexbox, Grid, адаптивность, анимации.</p>
+          </article>
+          <article class="skill-card">
+            <h3>JavaScript</h3>
+            <p data-ru="DOM, события, fetch, async/await." data-en="DOM, events, fetch, async/await.">DOM, события, fetch, async/await.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Git &amp; GitHub</h3>
+            <p data-ru="Ветки, коммиты, пулл-реквесты, GitHub Pages." data-en="Branches, commits, pull requests, GitHub Pages.">Ветки, коммиты, пулл-реквесты, GitHub Pages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title" data-ru="Проекты" data-en="Projects">Проекты</h2>
+        <div class="projects">
+          <article class="project-card">
+            <img src="images/project1.jpg" alt="Скриншот проекта Лендинг кофейни" width="400" height="250" />
+            <div class="project-card__body">
+              <h3 data-ru="Лендинг кофейни" data-en="Coffee shop landing">Лендинг кофейни</h3>
+              <p data-ru="Адаптивная страница с меню и формой заказа." data-en="Responsive page with menu and order form.">Адаптивная страница с меню и формой заказа.</p>
+              <a href="#" class="btn btn--small" data-ru="Открыть" data-en="Open">Открыть</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/project2.jpg" alt="Скриншот проекта To-Do приложение" width="400" height="250" />
+            <div class="project-card__body">
+              <h3 data-ru="To-Do приложение" data-en="To-Do app">To-Do приложение</h3>
+              <p data-ru="Список задач с сохранением в localStorage." data-en="Task list with localStorage persistence.">Список задач с сохранением в localStorage.</p>
+              <a href="#" class="btn btn--small" data-ru="Открыть" data-en="Open">Открыть</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/project3.jpg" alt="Скриншот проекта Погодное приложение" width="400" height="250" />
+            <div class="project-card__body">
+              <h3 data-ru="Погодное приложение" data-en="Weather app">Погодное приложение</h3>
+              <p data-ru="Загрузка данных через API с помощью fetch." data-en="Fetching data from an API using fetch.">Загрузка данных через API с помощью fetch.</p>
+              <a href="#" class="btn btn--small" data-ru="Открыть" data-en="Open">Открыть</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <h2 class="section__title" data-ru="Контакты" data-en="Contact">Контакты</h2>
+        <p class="section__lead"
+           data-ru="Напишите мне — я открыт к предложениям и сотрудничеству."
+           data-en="Write to me — I'm open to offers and collaboration.">
+          Напишите мне — я открыт к предложениям и сотрудничеству.
+        </p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" data-ru="Ваше имя" data-en="Your name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" required />
+            <span class="form-error" data-error-for="name"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-ru="Email" data-en="Email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <span class="form-error" data-error-for="email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-ru="Сообщение" data-en="Message">Сообщение</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+            <span class="form-error" data-error-for="message"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary" data-ru="Отправить" data-en="Send">Отправить</button>
+          <p class="form-success" id="formSuccess" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> <span data-ru="Андрей Грицкив. Все права защищены." data-en="Andrey Gritskiv. All rights reserved.">Андрей Грицкив. Все права защищены.</span></p>
+      <ul class="social">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Наверх / Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
